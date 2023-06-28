@@ -1,4 +1,4 @@
-# Cancer Research donation APP 
+# Cancer Research Donation APP 
 # Cypress JavaScript Framework with BDD Cucumber Integration
 This README provides an overview and guide for using the Cypress JavaScript framework with BDD (Behavior-Driven Development) Cucumber integration. Cypress is a powerful end-to-end testing framework for web applications, and when combined with Cucumber, it allows you to write your tests in a human-readable format.
 ## Prerequisites

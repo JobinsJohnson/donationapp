@@ -54,10 +54,11 @@ Given("able to login to the application successfully", () => {
       pymnts.selectGiftaid();
       pymnts.enterCarddetails()
       pymnts.clickCompletemyapplication();
-      cy.wait(20000)
+    
 
     })
     And("user should be in thank you page and able to see the payment reference",() => {
+     // thnkyou.ValidateIsinthankyoupage();
       thnkyou.getReferenceNumber();
       thnkyou.validateResponse();
     })

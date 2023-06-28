@@ -8,7 +8,6 @@ class thankyouPage {
             cy.url().should('include', 'https://app.pws.int.cruk.org/support-us/thanks');
         }, { timeout: 10000, interval: 1000 });
 
-
     }
 
     getReferenceNumber() {
@@ -22,8 +21,6 @@ class thankyouPage {
     validateResponse() {
 
         cy.intercept('POST', 'https://api.pws.int.cruk.org/transaction').as('apiRequest');
-
-        // Perform actions that trigger the API call
 
         cy.wait('@apiRequest').then((interception) => {
             const response = interception.response;

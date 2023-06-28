@@ -8,3 +8,4 @@ Then user should be able to select the donation goes to and cancer type and clic
 Then user should be in the personal details page 
 And user should be able to enter personal details and click submit button
 Then user should be able to enter payment details and click submit application button
+And user should be in thank you page and able to see the payment reference

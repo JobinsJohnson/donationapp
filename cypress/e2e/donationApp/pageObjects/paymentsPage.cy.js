@@ -35,7 +35,7 @@ class payments {
             let stripe = cy.wrap($body)
             stripe.eq(0).click().type(4000000000001000)
         })
-       cy.wait(5000)
+        cy.wait(5000)
         cy.get('#braintree-hosted-field-expirationDate').then($element => {
             const $body = $element.contents().find('body')
             let stripe = cy.wrap($body)
@@ -48,11 +48,12 @@ class payments {
             stripe.eq(0).click().type(123)
         })
 
-    
+
 
     }
-    clickCompletemyapplication(){
+    clickCompletemyapplication() {
         cy.contains('Complete my donation').click()
+
     }
 
 

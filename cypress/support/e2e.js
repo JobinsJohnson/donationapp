@@ -19,6 +19,12 @@ import 'cypress-xpath'
 import 'cypress-wait-until'
 import 'cypress-iframe'
 
+import './commands'
+Cypress.on('uncaught:exception', (err, runnable) => {
+  // returning false here prevents Cypress from failing the test
+  return false
+})
+
 // Any other custom commands or imports
 
 

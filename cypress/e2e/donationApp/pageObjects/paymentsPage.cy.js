@@ -4,10 +4,6 @@ let cardtype = "Credit / Debit card";
 let cardholdername = "//*[@id='cardholderName']";
 let giftAidcheckbox = "Yes I would like Cancer Research UK to claim Gift Aid on my donation"
 
-
-
-
-
 let userdata;
 before(() => {
     cy.fixture('dono').then((data) => {

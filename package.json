@@ -1,0 +1,25 @@
+{
+  "name": "cancer-research-uk-donation-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cucumber": "^6.0.7",
+    "cypress": "^12.15.0",
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  },
+  "devDependencies": {
+    "cypress-iframe": "^1.0.1",
+    "cypress-wait-until": "^2.0.0",
+    "cypress-xpath": "^2.0.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "step_definitions": "cypress/e2e/donationApp"
+  }
+}

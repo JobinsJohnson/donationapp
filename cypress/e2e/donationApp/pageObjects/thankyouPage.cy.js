@@ -15,7 +15,6 @@ class thankyouPage {
     validateResponse() {
 
         cy.intercept('POST', 'https://api.pws.int.cruk.org/transaction').as('apiRequest');
-
         cy.wait('@apiRequest').then((interception) => {
             const response = interception.response;
             expect(response.body.id).to.contain(value)

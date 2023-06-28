@@ -20,6 +20,8 @@ Page objects are used to represent the different pages or components of your app
 use the following commands to run the test 
 -> **npx cypress run --headed --browser chrome**
 
+-> **npx cypress run --headed --browser edge**
+
 -> **npx cypress open**
 
 # Assumptions and other points

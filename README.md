@@ -10,7 +10,7 @@ A code editor of your choice (e.g., Visual Studio Code)
 ## Writing Tests
 
 The tests are written using the Cucumber syntax, which is based on the Gherkin language. The feature files are located in the cypress/E2E directory. feature file describes a particular feature of your application and contains scenarios. the name of the feature file used in this framework is donationapp.feature.
-##StepDefinitions file name (doanationApp.cy.js)
+## StepDefinitions file name (doanationApp.cy.js)
 To implement the steps defined in the feature file, i have created corresponding step definitions. Step definitions are written in JavaScript and are located in the cypress/e2e/ folder.
 ## Page Objects.
 

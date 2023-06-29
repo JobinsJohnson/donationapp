@@ -6,6 +6,7 @@ let donationGoes = "#destinationRadioGroup > .qosxO > .sc-kgflAQ > .sc-bBrHrO";
 let cancerTyp = "//*[@data-testid='restrictionSelect']";
 let donationContinueButton = "//button[@class = 'sc-hKMtZM iEeNAa']";
 let donationName = "//input[@id='inMemoryName']"
+let pageUrl = "https://app.pws.int.cruk.org/support-us/your-donation"
 
 let userdata;
 before(() => {
@@ -18,7 +19,7 @@ before(() => {
 class homepage {
     visit() {
         cy.visit(url);
-        cy.url(url).should('eq', 'https://app.pws.int.cruk.org/support-us/your-donation')
+        cy.url(url).should('eq', pageUrl)
 
     }
     donationAmount() {

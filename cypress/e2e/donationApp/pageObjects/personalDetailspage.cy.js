@@ -43,14 +43,12 @@ class personalDetails {
     }
     findAdress() {
         const homeaddress = userdata.homeAddress
-        const address = homeaddress.address1 + ', '+ homeaddress.town + ', ' +homeaddress.postcode
+        const address = homeaddress.address1 + ', ' + homeaddress.town + ', ' + homeaddress.postcode
         cy.xpath(findAddressbutton).click()
         cy.get(selectAddress).should('be.visible')
-
         cy.get(selectAddress).select(address)
         cy.get(emailNo).click()
-        cy.wait(5000)
-       
+        cy.wait(500)
         cy.xpath(submitButton).click()
     }
 

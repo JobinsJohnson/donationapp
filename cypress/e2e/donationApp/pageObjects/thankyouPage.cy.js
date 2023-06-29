@@ -4,14 +4,9 @@ let value;
 
 class thankyouPage {
 
-
     getReferenceNumber() {
         cy.wait(20000)
         cy.waitUntil(() => cy.xpath(monthlyButton).should('be.visible'))
-        //cy.contains(':nth-child(3) > .sc-bjUoiL > :nth-child(2)').then(($element) => {
-        //    value = $element.text();
-        //  })
-
         cy.get('p strong').invoke('text').then((text) => {
             value = text;
             console.log(text);

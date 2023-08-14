@@ -1,0 +1,16 @@
+trigger:
+- main  # Adjust this to match the branch you want to trigger the pipeline from
+
+pool:
+  vmImage: 'ubuntu-latest'  # Specify the virtual machine image
+
+steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '14.x'   # Node.js version
+  displayName: 'Install Node.js'
+
+- script: |
+    npm install
+    npx cypress run   # Command to run Cypress tests
+  displayName: 'Install Dependencies and Run Cypress Tests'

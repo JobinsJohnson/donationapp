@@ -60,7 +60,7 @@ Given("able to login to the application successfully", () => {
     And("user should be in thank you page and able to see the payment reference",() => {
      
       thnkyou.getReferenceNumber();
-      //thnkyou.validateResponse();
+      thnkyou.validateResponse();
     })
 
 
